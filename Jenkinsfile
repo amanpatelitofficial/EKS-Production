@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'latest', url: 'https://github.com/jaiswaladi246/10-Tier-MicroService-Appliction.git'
+                git branch: 'latest', url: 'https://github.com/amanpatelitofficial/10-Tier-MicroService-Appliction.git'
             }
         }
         
@@ -28,9 +28,9 @@ pipeline {
                 script{
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
                           dir('/var/lib/jenkins/workspace/10-Tier/src/adservice/') {
-                                 sh "docker build -t adijaiswal/adservice:latest ."
-                                 sh "docker push adijaiswal/adservice:latest"
-								 sh " docker rmi adijaiswal/adservice:latest"
+                                 sh "docker build -t amanpatelitprofessional/adservice:latest ."
+                                 sh "docker push amanpatelitprofessioanl/adservice:latest"
+								 sh " docker rmi amanpatelitprofessional/adservice:latest"
                         }
                     }
                 }
@@ -42,9 +42,9 @@ pipeline {
                 script{
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
                           dir('/var/lib/jenkins/workspace/10-Tier/src/cartservice/src/') {
-                                 sh "docker build -t adijaiswal/cartservice:latest ."
-                                 sh "docker push adijaiswal/cartservice:latest"
-								 sh " docker rmi adijaiswal/cartservice:latest"
+                                 sh "docker build -t amanpatelitprofessioanl/cartservice:latest ."
+                                 sh "docker push amanpatelitprofessioan/cartservice:latest"
+								 sh " docker rmi amanpatelitprofessioan/cartservice:latest"
                         }
                     }
                 }
@@ -56,9 +56,9 @@ pipeline {
                 script{
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
                           dir('/var/lib/jenkins/workspace/10-Tier/src/checkoutservice/') {
-                                 sh "docker build -t adijaiswal/checkoutservice:latest ."
-                                 sh "docker push adijaiswal/checkoutservice:latest"
-								 sh " docker rmi adijaiswal/checkoutservice:latest"
+                                 sh "docker build -t amanpatelitprofessioanl/checkoutservice:latest ."
+                                 sh "docker push amanpatelitprofessioanl/checkoutservice:latest"
+								 sh " docker rmi amanpatelitprofessioanl/checkoutservice:latest"
                         }
                     }
                 }
@@ -70,9 +70,9 @@ pipeline {
                 script{
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
                           dir('/var/lib/jenkins/workspace/10-Tier/src/currencyservice/') {
-                                 sh "docker build -t adijaiswal/currencyservice:latest ."
-                                 sh "docker push adijaiswal/currencyservice:latest"
-								 sh " docker rmi adijaiswal/currencyservice:latest"
+                                 sh "docker build -t amanpatelitprofessioanl/currencyservice:latest ."
+                                 sh "docker push amanpatelitprofessioanl/currencyservice:latest"
+								 sh " docker rmi amanpatelitprofessioanl/currencyservice:latest"
                         }
                     }
                 }
@@ -84,9 +84,9 @@ pipeline {
                 script{
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
                           dir('/var/lib/jenkins/workspace/10-Tier/src/emailservice/') {
-                                 sh "docker build -t adijaiswal/emailservice:latest ."
-                                 sh "docker push adijaiswal/emailservice:latest"
-								 sh " docker rmi adijaiswal/emailservice:latest"
+                                 sh "docker build -t amanpatelitprofessioanl/emailservice:latest ."
+                                 sh "docker push amanpatelitprofessioanl/emailservice:latest"
+								 sh " docker rmi amanpatelitprofessioanl/emailservice:latest"
                         }
                     }
                 }
@@ -98,9 +98,9 @@ pipeline {
                 script{
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
                           dir('/var/lib/jenkins/workspace/10-Tier/src/frontend/') {
-                                 sh "docker build -t adijaiswal/frontend:latest ."
-                                 sh "docker push adijaiswal/frontend:latest"
-								 sh " docker rmi adijaiswal/frontend:latest"
+                                 sh "docker build -t amanpatelitprofessioanl/frontend:latest ."
+                                 sh "docker push amanpatelitprofessioanl/frontend:latest"
+								 sh " docker rmi amanpatelitprofessioanl/frontend:latest"
                         }
                     }
                 }
@@ -112,9 +112,9 @@ pipeline {
                 script{
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
                           dir('/var/lib/jenkins/workspace/10-Tier/src/loadgenerator/') {
-                                 sh "docker build -t adijaiswal/loadgenerator:latest ."
-                                 sh "docker push adijaiswal/loadgenerator:latest"
-								 sh " docker rmi adijaiswal/loadgenerator:latest"
+                                 sh "docker build -t amanpatelitprofessioanl/loadgenerator:latest ."
+                                 sh "docker push amanpatelitprofessioanl/loadgenerator:latest"
+								 sh " docker rmi amanpatelitprofessioanl/loadgenerator:latest"
                         }
                     }
                 }
@@ -126,9 +126,9 @@ pipeline {
                 script{
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
                           dir('/var/lib/jenkins/workspace/10-Tier/src/paymentservice/') {
-                                 sh "docker build -t adijaiswal/paymentservice:latest ."
-                                 sh "docker push adijaiswal/paymentservice:latest"
-								  sh " docker rmi adijaiswal/paymentservice:latest"
+                                 sh "docker build -t amanpatelitprofessioanl/paymentservice:latest ."
+                                 sh "docker push amanpatelitprofessioanl/paymentservice:latest"
+								  sh " docker rmi amanpatelitprofessioanl/paymentservice:latest"
                         }
                     }
                 }
@@ -140,9 +140,9 @@ pipeline {
                 script{
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
                           dir('/var/lib/jenkins/workspace/10-Tier/src/productcatalogservice/') {
-                                 sh "docker build -t adijaiswal/productcatalogservice:latest ."
-                                 sh "docker push adijaiswal/productcatalogservice:latest"
-								 sh " docker rmi adijaiswal/productcatalogservice:latest"
+                                 sh "docker build -t amanpatelitprofessioanl/productcatalogservice:latest ."
+                                 sh "docker push amanpatelitprofessioanl/productcatalogservice:latest"
+								 sh " docker rmi amanpatelitprofessioanl/productcatalogservice:latest"
                         }
                     }
                 }
@@ -154,9 +154,9 @@ pipeline {
                 script{
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
                           dir('/var/lib/jenkins/workspace/10-Tier/src/recommendationservice/') {
-                                 sh "docker build -t adijaiswal/recommendationservice:latest ."
-                                 sh "docker push adijaiswal/recommendationservice:latest"
-								 sh " docker rmi adijaiswal/recommendationservice:latest"
+                                 sh "docker build -t amanpatelitprofessioanl/recommendationservice:latest ."
+                                 sh "docker push amanpatelitprofessioanl/recommendationservice:latest"
+								 sh " docker rmi amanpatelitprofessioanl/recommendationservice:latest"
                         }
                     }
                 }
@@ -168,9 +168,9 @@ pipeline {
                 script{
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
                           dir('/var/lib/jenkins/workspace/10-Tier/src/shippingservice/') {
-                                 sh "docker build -t adijaiswal/shippingservice:latest ."
-                                 sh "docker push adijaiswal/shippingservice:latest"
-								 sh " docker rmi adijaiswal/shippingservice:latest"
+                                 sh "docker build -t amanpatelitprofessioan/shippingservice:latest ."
+                                 sh "docker push amanpatelitprofessioanl/shippingservice:latest"
+								 sh " docker rmi amanpatelitprofessioanl/shippingservice:latest"
                         }
                     }
                 }
